@@ -41,12 +41,18 @@ public class CreateContactsTest extends BaseClass{
 	@Test
 	public void createContactsTest() throws Throwable{
 
-
-		//To generate random number
+		//To generate random number 
 		int randNum = jLib.getRandomNumber();
 		
-		//Fetch first name from excelSheet
+		//reading data from excel sheet
 		String FirstName = eLib.readDataFromExcel("Sheet1", 7, 2)+randNum;
+<<<<<<< HEAD
+=======
+
+
+		//read data from excel sheet
+
+>>>>>>> branch 'myNewBranch' of https://github.com/sanjaybabu123/gitrepo.git
 		String LastName = eLib.readDataFromExcel("Sheet1", 8, 2)+randNum;
 		
 		HomePage hpage = new HomePage(driver);
