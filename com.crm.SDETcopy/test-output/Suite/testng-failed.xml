@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test2(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.crm.createOrganisation.ToCreateOrganisation">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="createOrgTest"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToApp"/>
+          <include name="dbConfig"/>
+          <include name="logoutFromApp"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- com.crm.createOrganisation.ToCreateOrganisation -->
+      <class name="com.crm.createOrganisation.CreateOrganizationWithIndustryAndTypeTest">
+        <methods>
+          <include name="createOrgWithIndType"/>
+          <include name="launchBrowser"/>
+          <include name="closeDBconfig"/>
+          <include name="loginToApp"/>
+          <include name="dbConfig"/>
+          <include name="logoutFromApp"/>
+          <include name="closeTheBrowser"/>
+        </methods>
+      </class> <!-- com.crm.createOrganisation.CreateOrganizationWithIndustryAndTypeTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
