@@ -41,7 +41,8 @@ public class CreateContactsTest extends BaseClass{
 	@Test
 	public void createContactsTest() throws Throwable{
 
-		//To generate random number 
+
+		//To generate random number
 		int randNum = jLib.getRandomNumber();
 		
 		//Fetch first name from excelSheet
