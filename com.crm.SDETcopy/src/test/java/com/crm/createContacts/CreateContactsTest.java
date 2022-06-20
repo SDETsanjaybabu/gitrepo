@@ -48,7 +48,7 @@ public class CreateContactsTest extends BaseClass{
 		//Fetch first name from excelSheet
 		String FirstName = eLib.readDataFromExcel("Sheet1", 7, 2)+randNum;
 
-		
+		//read data from excel sheet
 		String LastName = eLib.readDataFromExcel("Sheet1", 8, 2)+randNum;
 		
 		HomePage hpage = new HomePage(driver);
